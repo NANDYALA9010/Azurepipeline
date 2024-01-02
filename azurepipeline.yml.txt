@@ -1,0 +1,20 @@
+-trigger:
+  development
+ agentpool:
+
+ stages:
+ -  stage:Build
+    jobs:
+    -  job: buildjob
+       steps:
+       -  script: hello world!
+-   stage: Test 
+    jobs:       
+    -  job: testonwindows 
+       steps:
+       -script: testingcompleted!
+-  stage: staticcodeAnalysis
+    jobs:
+    -  job: sonarcloud
+       steps: triggersonarcloud!  
+       -script:Nobugsfound!    
